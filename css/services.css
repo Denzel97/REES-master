@@ -1,0 +1,57 @@
+/* Feature Box
+---------------------*/
+.feature-box {
+    padding: 32px;
+    box-shadow: 0 0 30px rgba(158, 78, 221, 0.125);
+    margin: 12px 0;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 0;
+}
+
+.feature-box i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color: #9D4EDD;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.feature-box h5 {
+    font-weight: 600;
+}
+
+.feature-box p {
+    margin: 0;
+}
+
+.feature-box:hover {
+    background: #9D4EDD;
+    color: #ffffff !important;    
+}
+
+.feature-box:hover * {
+    color: #FFFFFF !important;
+}
+
+.section {
+    padding: 30px 0;
+    position: relative;
+}
+
+.section-title {
+    padding-bottom: 10px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    font-size: 45px;
+    margin: 0 0 15px;
+    border-left: 5px solid #9D4EDD;
+    padding-left: 15px;
+}
