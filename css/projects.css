@@ -1,0 +1,83 @@
+.new-project-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.new-project-img img {
+    transition: all 0.3s ease;
+}
+
+.new-project-img img:hover {
+    transform: scale(1.05);
+}
+
+.new-project-img a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-project-item:hover .new-project-img a {
+    opacity: 1;
+}
+
+.new-project-title {
+    text-align: center;
+}
+
+.new-project-title h4 {
+    margin: 0;
+}
+
+/* Custom CSS for modals to take 75% of the page height */
+.modal-dialog {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Ensure content is scrollable if it overflows */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the full height */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+    background: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+
+.modal-header {
+    border: none; /* Remove border */
+}
